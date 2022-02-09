@@ -1,71 +1,61 @@
 import styles from "./Footer.module.css";
 
+import { BsGithub, BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
       <div className={styles.title}>
-        <h2>Davi</h2>
+        <h2>Davi </h2>
       </div>
 
       <ul className={styles.social_list}>
-        <li>
-          <a href="https://www.instagram.com/davimateus1/" target="_blank">
-            Inicio
-          </a>
+        <li className={styles.titles}>
+          Inicio
         </li>
-        <li>
-          <a href="https://github.com/davimateus1" target="_blank">
-            Contate-me
-          </a>
+        <li className={styles.click}>
+          Sobre mim
         </li>
-        <li>
-          <a href="https://www.linkedin.com/in/davimateusg/" target="_blank">
-            Social
-          </a>
+        <li className={styles.click}>
+          Projetos
         </li>
       </ul>
 
       <ul className={styles.social_list_two}>
-        <li>
-          <a href="https://www.instagram.com/davimateus1/" target="_blank">
-            Inicio
+        <li className={styles.titles}>
+          Contate-me
+        </li>
+        <li className={styles.click}>
+          <a href="https://api.whatsapp.com/send?phone=5587988476864&text=Enviar%20mensagem%20para%20Davi%20Mateus" target="_blank">
+            Whatsapp
           </a>
         </li>
-        <li>
-          <a href="https://github.com/davimateus1" target="_blank">
-            Contate-me
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/davimateusg/" target="_blank">
-            Social
+        <li className={styles.click}>
+          <a href="mailto:davimateusga@gmail.com" target="_blank">
+            Email
           </a>
         </li>
       </ul>
 
       <ul className={styles.social_list_three}>
-        <li>
-          <a href="https://www.instagram.com/davimateus1/" target="_blank">
-            Inicio
-          </a>
+        <li className={styles.titles}>
+          Social
         </li>
         <li>
           <a href="https://github.com/davimateus1" target="_blank">
-            Contate-me
+            <BsGithub />
           </a>
-        </li>
-        <li>
           <a href="https://www.linkedin.com/in/davimateusg/" target="_blank">
-            Social
+            <BsLinkedin />
+          </a>
+          <a href="https://www.instagram.com/davimateus1/" target="_blank">
+            <BsInstagram />
           </a>
         </li>
       </ul>
-
-      <br />
       <hr />
-
       <div className={styles.authorized}>
-        <p>Davi &copy; 2021</p>
+        <p>Davi &copy; 2022</p>
       </div>
 
     </footer>
