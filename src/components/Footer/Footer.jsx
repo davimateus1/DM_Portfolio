@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 
-import { BsGithub, BsInstagram, BsLinkedin, BsWhatsapp } from "react-icons/bs";
+import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
   return (

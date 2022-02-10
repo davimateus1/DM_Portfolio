@@ -7,3 +7,79 @@
     padding: 4em;
     background-color: #171718;
 }
+
+.container h1{
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    cursor: default;
+}
+
+.container h1 span{
+    color: #1aabcd;
+}
+
+.container p{
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 71px;
+    max-width: 700px;
+    text-align: center;
+    line-height:24px;
+    color: #ffff;
+    text-align: center;
+    letter-spacing: 0.15px;
+    cursor: default;
+    margin-top: 50px;
+}
+
+.container .buttons {
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .button1{
+    margin-right: 7.5px;
+    padding: 1.2em 2em;
+    border: none;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #1aabcd;
+    transition: all 0.5s;
+}
+
+.container .button1:hover{
+    background-color: #5bc5ed;
+}
+.container .button2 {
+    margin-left: 7.5px;
+    padding: 1.2em 2em;
+    border: 1.5px solid #1aabcd;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #1aabcd;
+    background-color: transparent;
+    transition: all 0.5s;
+}
+
+.container svg {
+    padding-right: 10px;
+    margin-bottom: -1px;
+}
