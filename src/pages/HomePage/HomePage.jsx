@@ -79,6 +79,7 @@ const HomePage = () => {
           </div>
         </div>
       </Fade>
+      <Zoom>
       <div className={styles.abilities}>
         <h1>Minhas habilidades</h1>
         <div className={styles.badges}>
@@ -94,6 +95,7 @@ const HomePage = () => {
       <button className={styles.abilities_button}>
         Ver mais skills <BsArrowRight />
       </button>
+      </Zoom>
     </div>
   );
 };
