@@ -46,7 +46,7 @@
 }
 
 .container .button1{
-    margin-right: 7.5px;
+    margin-right: 10px;
     padding: 1.2em 2em;
     border: none;
     font-family: Poppins, Arial, Helvetica, sans-serif;
@@ -63,14 +63,84 @@
 .container .button1:hover{
     background-color: #5bc5ed;
 }
-.container .button2 {
-    margin-left: 7.5px;
-    padding: 1.2em 2em;
+
+.container svg {
+    padding-right: 10px;
+    margin-bottom: -1px;
+}
+
+.container_height{
+    height: 400px;
+}
+
+.card_home{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-top: 169px;
+    width: 967px;
+    height: 453.16px;
+    background-color:#1F1F21;
+    border: 1.5px solid #3D3D3D;
+    box-sizing: border-box;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 0px 100px 100px rgba(26,171,205,0.09); 
+    box-shadow: 0px 0px 100px 100px rgba(26,171,205,0.09);
+}
+
+.card_home .image_container img{
+    position: static;
+    margin: 24px 0px 24px 24px;
+    width: 405.16px;
+    height: 405.16px;
+    border: 1px solid transparent;
+    background-image: linear-gradient(to right, rgba(160,219,194,0.5) , rgba(26,171,205,0.5));
+    background-color: rgba(26,171,205,0.5);
+    border-radius: 5%;
+    box-shadow: inset -1px -3px 30px 30px rgba(156,93,180,0.4); 
+}
+
+.card_home h1{
+   text-align: start;
+   margin-left: 32px;
+   font-family: DM Sans, Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   font-size: 48px;
+   line-height: 57px;
+}
+
+.card_home h1{
+    color: #1aabcd;
+    text-align: start;
+    margin-left: 32px;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 57px;
+ }
+
+ .card_home p{
+    margin-top: -20px;
+    letter-spacing: 0.44px;
+    text-align: start;
+    margin-left: 32px;
+    font-weight: normal;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    width: 470px;
+    
+ }
+
+ .card_home .button_card {
+    margin-left: 32px;
+    margin-top: 9px;
+    padding: 1.2em 1.6em;
     border: 1.5px solid #1aabcd;
     font-family: Poppins, Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 10px;
     border-radius: 8px;
     cursor: pointer;
@@ -79,7 +149,8 @@
     transition: all 0.5s;
 }
 
-.container svg {
-    padding-right: 10px;
-    margin-bottom: -1px;
+.card_home .button_card svg{ 
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: -20px;
 }
