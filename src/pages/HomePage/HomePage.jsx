@@ -11,6 +11,27 @@ import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
 
 import davi from "../../assets/img/davi.png";
 
+const cards = [
+  {
+    title: "HTML",
+    subtitle:
+      "Essa tecnologia foi uma das primeiras que comecei a estudar, a linguagem de marcação HTML5, participei de vários cursos sobre. E com ela construi vários sites juntamente com CSS e JavaScript.",
+    svg: DiHtml5,
+  },
+  {
+    title: "CSS",
+    subtitle:
+      "Aprendendo o HTML seria mais do que minha obrigação aprender o CSS, levando isso em consideração, estudei em conjunto, para entender melhor a comunicação entre ele e o HTML.",
+    svg: DiCss3,
+  },
+  {
+    title: "ReactJS",
+    subtitle:
+      "Logo após entender entender HTML, CSS e JavaScript, decidi tomar a iniciativa de aprender um framework, e o que melhor combina essas três tecnologias é o ReactJS, inclusive (spoiler) este portfólio está sendo desenvolvido com o mesmo.",
+    svg: DiReact,
+  },
+];
+
 const HomePage = () => {
   return (
     <div className={styles.container}>
@@ -61,24 +82,18 @@ const HomePage = () => {
       <div className={styles.abilities}>
         <h1>Minhas habilidades</h1>
         <div className={styles.badges}>
-          <AbilitiesCard
-            svg={DiHtml5}
-            title="HTML"
-            subtitle="Essa tecnologia foi uma das primeiras que comecei a estudar, a linguagem de marcação HTML5, participei de vários cursos sobre. E com ela construi vários sites juntamente com CSS e JavaScript."
-          />
-          <AbilitiesCard
-            svg={DiCss3}
-            title="CSS"
-            subtitle="Aprendendo o HTML seria mais do que minha obrigação aprender o CSS, levando isso em consideração, estudei em conjunto, para entender melhor a comunicação entre ele e o HTML."
-          />
-          <AbilitiesCard
-            svg={DiReact}
-            title="ReactJS"
-            subtitle="Logo após entender entender HTML, CSS e JavaScript, decidi tomar a iniciativa de aprender um framework, e o que melhor combina essas três tecnologias é o ReactJS, inclusive (spoiler) este portfólio está sendo desenvolvido com o mesmo."
-          />
+          {cards.map((item) => (
+            <AbilitiesCard
+              title={item.title}
+              subtitle={item.subtitle}
+              svg={item.svg}
+            />
+          ))}
         </div>
       </div>
-        <button className={styles.abilities_button}>Ver mais skills <BsArrowRight /></button>
+      <button className={styles.abilities_button}>
+        Ver mais skills <BsArrowRight />
+      </button>
     </div>
   );
 };
