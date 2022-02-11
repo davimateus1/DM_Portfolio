@@ -1,11 +1,13 @@
 import styles from "./HomePage.module.css";
 
 import Typing from "react-typing-animation";
-import {Fade, Zoom} from "react-reveal";
+import { Fade, Zoom } from "react-reveal";
 
 import { BsArrowRight } from "react-icons/bs";
+import { DiReact, DiHtml5, DiCss3 } from "react-icons/di";
 
 import PopupDownload from "../../components/PopupDownload/PopupDownload";
+import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
 
 import davi from "../../assets/img/davi.png";
 
@@ -28,34 +30,55 @@ const HomePage = () => {
         </div>
       </Typing>
       <Zoom>
-      <div className={styles.buttons}>
-        <button className={styles.button1}>Ver projetos</button>
-        <PopupDownload />
-      </div>
+        <div className={styles.buttons}>
+          <button className={styles.button1}>Ver projetos</button>
+          <PopupDownload />
+        </div>
       </Zoom>
       <Fade bottom>
-          <div className={styles.card_home}>
-            <div className={styles.image_container}>
-              <img src={davi} alt="avatar" />
-            </div>
-            <div>
-              <h1>Sobre mim</h1>
-              <p>
-                Meu nome é Davi Mateus, tenho 19 anos, curso Ciência da
-                Computação na Universidade Católica de Pernambuco (UNICAP).
-                Desde pequeno, sempre gostei muito de coisas que eram voltadas a
-                tecnologia e jogos, mas infelizmente só vim conhecer o mundo da
-                programação no final do 3° ano do ensino médio. Quando comecei o
-                curso, estudei as áreas e me apaixonei pela área de front-end,
-                hoje sou desenvolvedor e continuo sempre estudando para
-                descobrir novas coisas e aprimorar as minhas habilidades!
-              </p>
-              <button className={styles.button_card}>
-                Mais sobre mim <BsArrowRight />
-              </button>
-            </div>
+        <div className={styles.card_home}>
+          <div className={styles.image_container}>
+            <img src={davi} alt="avatar" />
           </div>
+          <div>
+            <h1>Sobre mim</h1>
+            <p>
+              Meu nome é Davi Mateus, tenho 19 anos, curso Ciência da Computação
+              na Universidade Católica de Pernambuco (UNICAP). Desde pequeno,
+              sempre gostei muito de coisas que eram voltadas a tecnologia e
+              jogos, mas infelizmente só vim conhecer o mundo da programação no
+              final do 3° ano do ensino médio. Quando comecei o curso, estudei
+              as áreas e me apaixonei pela área de front-end, hoje sou
+              desenvolvedor e continuo sempre estudando para descobrir novas
+              coisas e aprimorar as minhas habilidades!
+            </p>
+            <button className={styles.button_card}>
+              Mais sobre mim <BsArrowRight />
+            </button>
+          </div>
+        </div>
       </Fade>
+      <div className={styles.abilities}>
+        <h1>Minhas habilidades</h1>
+        <div className={styles.badges}>
+          <AbilitiesCard
+            svg={DiHtml5}
+            title="HTML"
+            subtitle="Essa tecnologia foi uma das primeiras que comecei a estudar, a linguagem de marcação HTML5, participei de vários cursos sobre. E com ela construi vários sites juntamente com CSS e JavaScript."
+          />
+          <AbilitiesCard
+            svg={DiCss3}
+            title="CSS"
+            subtitle="Aprendendo o HTML seria mais do que minha obrigação aprender o CSS, levando isso em consideração, estudei em conjunto, para entender melhor a comunicação entre ele e o HTML."
+          />
+          <AbilitiesCard
+            svg={DiReact}
+            title="ReactJS"
+            subtitle="Logo após entender entender HTML, CSS e JavaScript, decidi tomar a iniciativa de aprender um framework, e o que melhor combina essas três tecnologias é o ReactJS, inclusive (spoiler) este portfólio está sendo desenvolvido com o mesmo."
+          />
+        </div>
+      </div>
+        <button className={styles.abilities_button}>Ver mais skills <BsArrowRight /></button>
     </div>
   );
 };
