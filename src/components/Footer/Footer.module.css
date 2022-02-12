@@ -87,6 +87,14 @@
     border-bottom: 2px solid transparent;
 }
 
+.click a {
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px;
+    transition: all .4s;
+    border-bottom: 2px solid transparent;
+}
+
 .click:hover{
     border-color: #66D2D1;
 }

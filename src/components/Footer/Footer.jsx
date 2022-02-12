@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 
 import { BsGithub, BsInstagram, BsLinkedin } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,13 +11,19 @@ const Footer = () => {
       </div>
 
       <ul className={styles.social_list}>
-        <li className={styles.titles}>Inicio</li>
-        <li className={styles.click}>Sobre mim</li>
-        <li className={styles.click}>Projetos</li>
+        <li className={styles.click}>
+          <Link to="/">Inicio</Link>
+        </li>
+        <li className={styles.click}>
+          <Link to="/about">Sobre mim</Link>
+        </li>
+        <li className={styles.click}>
+          <Link to="/projects">Projetos</Link>
+        </li>
       </ul>
 
       <ul className={styles.social_list_two}>
-        <li className={styles.titles}>Contate-me</li>
+        <li className={styles.titles}>Contatos</li>
         <li className={styles.click}>
           <a
             href="https://api.whatsapp.com/send?phone=5587988476864&text=Enviar%20mensagem%20para%20Davi%20Mateus"
