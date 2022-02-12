@@ -11,6 +11,7 @@ import PopupDownload from "../../components/PopupDownload/PopupDownload";
 import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
 
 import davi from "../../assets/img/davi.png";
+import bemvindo from "../../assets/img/bemvindo.png";
 import marvelflix from "../../assets/img/marvelflix.png";
 import piececord from "../../assets/img/piececord.png";
 import pokenext from "../../assets/img/pokenext.png";
@@ -31,7 +32,7 @@ const cards = [
   {
     title: "ReactJS",
     subtitle:
-      "Logo após entender entender HTML, CSS e JavaScript, decidi tomar a iniciativa de aprender um framework, e o que melhor combina essas três tecnologias é o ReactJS, inclusive (spoiler) este portfólio está sendo desenvolvido com o mesmo.",
+      "Logo após entender entender HTML, CSS e JavaScript, decidi tomar a iniciativa de aprender uma biblioteca, e o que melhor combina essas três tecnologias é o ReactJS, inclusive (spoiler) este portfólio está sendo desenvolvido com o mesmo.",
     svg: DiReact,
   },
 ];
@@ -39,6 +40,11 @@ const cards = [
 const HomePage = () => {
   return (
     <div className={styles.container}>
+      <Fade top duration={750}>
+        <div className={styles.bem_vindo}>
+          <img src={bemvindo} alt="bem-vindo" />
+        </div>
+      </Fade>
       <Typing speed={30}>
         <div className={styles.container_height}>
           <h1>
