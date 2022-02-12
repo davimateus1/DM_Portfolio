@@ -221,3 +221,43 @@
  .container .abilities_button:hover{
     background-color: #5bc5ed;
 }
+
+/* Alguns dos meus projetos */
+
+.projects h1{
+    margin-top: 178px;
+    margin-bottom: 60px;
+    color: #1aabcd;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 40px;
+    letter-spacing: 0.25px;
+}
+
+.projects img{
+    width: 1155px;
+    height: 534px;
+    border-radius: 20px;
+    display: flex;
+    margin-bottom: 59px;
+    border: 1.5px solid #1aabcd;
+    -webkit-box-shadow: 0px 0px 30px 30px rgba(26,171,205,0.3); 
+    box-shadow: 0px 0px 30px 30px rgba(26,171,205,0.09);
+}
+
+.projects_button {
+    margin-top: 60px;
+    margin-bottom: 175px;
+    padding: 1.2em 1.5em;
+    border: none;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #1aabcd;
+    transition: all 0.5s;
+}

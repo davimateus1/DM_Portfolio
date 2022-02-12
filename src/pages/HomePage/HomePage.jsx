@@ -2,6 +2,7 @@ import styles from "./HomePage.module.css";
 
 import Typing from "react-typing-animation";
 import { Fade, Zoom } from "react-reveal";
+import Tilt from "react-tilt";
 
 import { BsArrowRight } from "react-icons/bs";
 import { DiReact, DiHtml5, DiCss3 } from "react-icons/di";
@@ -10,6 +11,9 @@ import PopupDownload from "../../components/PopupDownload/PopupDownload";
 import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
 
 import davi from "../../assets/img/davi.png";
+import marvelflix from "../../assets/img/marvelflix.png";
+import piececord from "../../assets/img/piececord.png";
+import pokenext from "../../assets/img/pokenext.png";
 
 const cards = [
   {
@@ -80,21 +84,73 @@ const HomePage = () => {
         </div>
       </Fade>
       <Zoom>
-      <div className={styles.abilities}>
-        <h1>Minhas habilidades</h1>
-        <div className={styles.badges}>
-          {cards.map((item) => (
-            <AbilitiesCard
-              title={item.title}
-              subtitle={item.subtitle}
-              svg={item.svg}
-            />
-          ))}
+        <div className={styles.abilities}>
+          <h1>Minhas habilidades</h1>
+          <div className={styles.badges}>
+            {cards.map((item) => (
+              <AbilitiesCard
+                title={item.title}
+                subtitle={item.subtitle}
+                svg={item.svg}
+              />
+            ))}
+          </div>
+        </div>
+        <button className={styles.abilities_button}>
+          Ver mais skills <BsArrowRight />
+        </button>
+      </Zoom>
+      <div className={styles.projects}>
+        <h1>Alguns dos meus projetos</h1>
+        <div className={styles.projects_image}>
+          <a
+            href="https://github.com/davimateus1/Pokenext"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Tilt
+              className="Tilt"
+              options={{ max: 8, speed: 700, scale: 1.03 }}
+            >
+              <Zoom>
+                <img alt="pokenext" src={pokenext} />
+              </Zoom>
+            </Tilt>
+          </a>
+          <a
+            href="https://github.com/davimateus1/Piececord"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Tilt
+              className="Tilt"
+              options={{ max: 8, speed: 700, scale: 1.03 }}
+            >
+              <Zoom>
+                <img alt="piececord" src={piececord} />
+              </Zoom>
+            </Tilt>
+          </a>
+          <a
+            href="https://github.com/davimateus1/Marvelflix"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Tilt
+              className="Tilt"
+              options={{ max: 8, speed: 700, scale: 1.03 }}
+            >
+              <Zoom>
+                <img alt="marvelflix" src={marvelflix} />
+              </Zoom>
+            </Tilt>
+          </a>
         </div>
       </div>
-      <button className={styles.abilities_button}>
-        Ver mais skills <BsArrowRight />
-      </button>
+      <Zoom>
+        <button className={styles.projects_button}>
+          Ver mais projetos <BsArrowRight />
+        </button>
       </Zoom>
     </div>
   );
