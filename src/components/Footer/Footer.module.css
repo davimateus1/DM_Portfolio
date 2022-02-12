@@ -1,8 +1,9 @@
 .footer{
     display: flex;
-    background-color: #131414;
+    background-color: #0E1011;
     padding: 3em;
     flex-direction: row;
+    border-top: 2px solid #131414;
 }
 
 .title{
