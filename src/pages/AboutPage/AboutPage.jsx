@@ -4,6 +4,8 @@ import { AiOutlineArrowLeft } from "react-icons/ai";
 import styles from "./AboutPage.module.css";
 
 import davi from "../../assets/img/davi.png";
+import Typing from "react-typing-animation";
+import { Fade, Zoom } from "react-reveal";
 
 const AboutPage = () => {
   return (
@@ -14,22 +16,32 @@ const AboutPage = () => {
         </Link>
       </div>
       <div className={styles.card_home}>
-        <div className={styles.image_container}>
-          <img src={davi} alt="avatar" />
-        </div>
-        <div className={styles.texts}>
-          <h1>Sobre mim</h1>
-          <p>
-            Meu nome é Davi Mateus, tenho 19 anos, curso Ciência da Computação
-            na Universidade Católica de Pernambuco (UNICAP). Desde pequeno,
-            sempre gostei muito de coisas que eram voltadas a tecnologia e
-            jogos, mas infelizmente só vim conhecer o mundo da programação no
-            final do 3° ano do ensino médio. Quando comecei o curso, estudei as
-            áreas e me apaixonei pela área de front-end, hoje sou desenvolvedor
-            e continuo sempre estudando para descobrir novas coisas e aprimorar
-            as minhas habilidades!
-          </p>
-        </div>
+        <Zoom>
+          <div className={styles.image_container}>
+            <img src={davi} alt="avatar" />
+          </div>
+          <div className={styles.texts}>
+            <h1>Davi Mateus</h1>
+            <Typing speed={3}>
+              <p>Sou desenvolvedor front-end, atualmente moro em Recife, PE.</p>
+              <p>
+                A ideia de trabalho em equipe me chama bastante atenção, enxergo
+                isso como uma maneira de aprender novas habilidades e expandir o
+                conhecimento com o intuito de melhorar a produtividade.
+              </p>
+              <p>
+                Gosto Bastante de estudar e descobrir sempre novas tecnologias
+                (bibliotecas, linguagens e melhorias no meu código).
+              </p>
+              <p>
+                Estou aberto a receber todo o feedback possivel em relação aos
+                meus projetos, para assim, saber como melhorar e otimizar o
+                desenvolvimento. Vamos bater um papo!
+              </p>
+              <a href="mailto:davimateusga@gmail.com">davimateusga@gmail.com</a>
+            </Typing>
+          </div>
+        </Zoom>
       </div>
     </div>
   );

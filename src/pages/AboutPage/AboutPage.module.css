@@ -14,10 +14,11 @@
     justify-content: flex-start;
     text-align: start;
 }
+
 .container .back a{ 
     color: #FFFFFF;
     text-decoration: none;
-    margin-left: 150px;
+    margin-left: 260px;
     transition: all 0.4s
 }
 
@@ -29,11 +30,14 @@
     margin-top: 58px;
     display: flex;
     flex-direction: row;
+    width:1432px;
+    height:739px;
+    margin-left: 146px;
+    justify-content:center;
 }
 
 .image_container img{
     position: static;
-    margin: 24px 0px 24px 146px;
     width: 500px;
     height: 547px;
     border: 1px solid transparent;
@@ -45,10 +49,44 @@
 
 .card_home .texts{
     margin-left: 140px;
+    color: #FFFFFF;
 }
 
 .card_home h1{
+    margin-top: 0;
     display: flex;
     flex-direction: row;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 71px;
+    margin-bottom: 24px;
+    letter-spacing: -0.5px;
+    cursor: default;
 }
+
+.card_home p{
+    width: 560px;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 38px;
+    letter-spacing: 0.44px;
+    cursor: default;
+}
+
+.card_home a{
+    text-decoration: none;
+    color: #1aabcd;
+    transition: all .4s;
+    border-bottom: 2px solid transparent;
+}
+
+.card_home a:hover{
+    text-decoration: none;
+    color: #1aabcd;
+    border-color: #FFFFFF;
+}
+
 
