@@ -31,7 +31,6 @@
     display: flex;
     flex-direction: row;
     width:1432px;
-    height:739px;
     margin-left: 146px;
     justify-content:center;
 }
@@ -89,4 +88,17 @@
     border-color: #FFFFFF;
 }
 
+.abilities  {
+   margin-top: 128px;
+   display: flex;
+   justify-content: center;
+}
 
+.abilities h1{
+    color: #1aabcd;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.25px;
+    line-height:  40px;
+}

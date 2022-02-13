@@ -1,5 +1,7 @@
 import styles from "./HomePage.module.css";
 
+import { Link } from 'react-router-dom';
+
 import Typing from "react-typing-animation";
 import { Fade, Zoom } from "react-reveal";
 import Tilt from "react-tilt";
@@ -86,9 +88,12 @@ const HomePage = () => {
               desenvolvedor e continuo sempre estudando para descobrir novas
               coisas e aprimorar as minhas habilidades!
             </p>
+            <Link to="/about">
+
             <button className={styles.button_card}>
               Mais sobre mim <BsArrowRight />
             </button>
+            </Link>
           </div>
         </div>
       </Fade>
