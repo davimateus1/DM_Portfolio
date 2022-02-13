@@ -4,6 +4,7 @@
     align-items: center;
     padding: 0em 1em;
     background-color: #0E1011;
+    border-bottom: 2px solid #131414;
 }
 .logo h1 {
     color: #FFFFFF;
