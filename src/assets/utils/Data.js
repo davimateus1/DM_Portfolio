@@ -1,5 +1,19 @@
-import { DiCss3, DiHtml5, DiReact, DiJavascript, DiJava } from "react-icons/di";
-import { SiBootstrap } from "react-icons/si";
+import {
+  DiCss3,
+  DiHtml5,
+  DiReact,
+  DiJavascript,
+  DiJava,
+  DiGithubBadge,
+} from "react-icons/di";
+import {
+  SiBootstrap,
+  SiNextdotjs,
+  SiTypescript,
+  SiSass,
+  SiTrello,
+  SiVisualstudiocode,
+} from "react-icons/si";
 
 export const CardsHome = [
   {
@@ -67,5 +81,53 @@ export const CardsAbout = [
     subtitle:
       "Logo após entender entender HTML, CSS e JavaScript, decidi tomar a iniciativa de aprender uma biblioteca, e o que melhor combina essas três tecnologias é o ReactJS, inclusive (spoiler) este portfólio está sendo desenvolvido com o mesmo.",
     svg: DiJava,
+  },
+];
+
+export const CardsStudy = [
+  {
+    id: 1,
+    title: "NextJS",
+    subtitle:
+      "Estou estudando NextJS pelo fato da sua simplicidade em exercer algumas funções, uma das que mais me chama atenção é a facilidade em criar uma rota, que você precisa apenas criar um arquivo dentro de uma pasta pages. Fora isso, quero aprender boa parte das suas funcionalidades.",
+    svg: SiNextdotjs,
+  },
+  {
+    id: 2,
+    title: "Typescript",
+    subtitle:
+      "Um dos principais motivos que quero aprender o Typescript é pra justamente entender como funciona as tipagens e também saber qual seria o caso ideal para utilizá-las.",
+    svg: SiTypescript,
+  },
+  {
+    id: 3,
+    title: "Sass",
+    subtitle:
+      "Já fiz alguns projetos utilizando o mesmo, porém ainda tenho muito a aprender, conseguiria fazer com Sass em poucas linhas oque faço com o CSS padrão, fora a utilização das props, que é algo que me chama muita atenção.",
+    svg: SiSass,
+  },
+];
+
+export const CardsTools = [
+  {
+    id: 1,
+    title: "Github",
+    subtitle:
+      "GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git.",
+    svg: DiGithubBadge,
+  },
+  {
+    id: 2,
+    title: "VsCode",
+    subtitle:
+      "O Visual Studio Code é um editor de código-fonte desenvolvido pela Microsoft para Windows, Linux e macOS.",
+    svg: SiVisualstudiocode,
+  },
+  {
+    id: 3,
+    title: "Trello",
+    subtitle:
+      "Trello é um aplicativo de gerenciamento de projeto baseado na web criado pela Fog Creek Software.",
+    svg: SiTrello,
   },
 ];

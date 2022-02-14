@@ -5,20 +5,23 @@ import styles from "./AboutPage.module.css";
 
 import davi from "../../assets/img/davi.png";
 import Typing from "react-typing-animation";
-import { Zoom } from "react-reveal";
-import { CardsAbout } from "../../assets/utils/Data";
+import { Fade, Zoom } from "react-reveal";
+import { CardsAbout, CardsStudy, CardsTools } from "../../assets/utils/Data";
 import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
+import ToolsCard from "../../components/ToolsCard/ToolsCard";
 
 const AboutPage = () => {
   return (
     <div className={styles.container}>
-      <div className={styles.back}>
-        <Link to="/">
-          <AiOutlineArrowLeft /> Voltar
-        </Link>
-      </div>
+      <Fade top>
+        <div className={styles.back}>
+          <Link to="/">
+            <AiOutlineArrowLeft /> Voltar
+          </Link>
+        </div>
+      </Fade>
       <div className={styles.card_home}>
-        <Zoom>
+        <Fade top>
           <div className={styles.image_container}>
             <img src={davi} alt="avatar" />
           </div>
@@ -43,11 +46,12 @@ const AboutPage = () => {
               <a href="mailto:davimateusga@gmail.com">davimateusga@gmail.com</a>
             </Typing>
           </div>
-        </Zoom>
+        </Fade>
       </div>
-      <div className={styles.abilities}>
-        <h1>Minhas habilidades</h1>
-        <div className={styles.badges}>
+      <Zoom>
+        <div className={styles.abilities}>
+          <h1>Minhas habilidades</h1>
+          <div className={styles.badges}>
             {CardsAbout.map((item) => (
               <AbilitiesCard
                 key={item.id}
@@ -57,10 +61,42 @@ const AboutPage = () => {
               />
             ))}
           </div>
-      </div>
-      <div className={styles.learn}>
+        </div>
+      </Zoom>
+      <Zoom>
+        <div className={styles.learn}>
+          <h1>Estou estudando</h1>
+          <div className={styles.badges}>
+            {CardsStudy.map((item) => (
+              <AbilitiesCard
+                key={item.id}
+                title={item.title}
+                subtitle={item.subtitle}
+                svg={item.svg}
+              />
+            ))}
+          </div>
+        </div>
+      </Zoom>
 
-      </div>
+      <Zoom>
+        <div className={styles.learn}>
+          <h1 className={styles.tool}>Ferramentas de trabalho</h1>
+          <div className={styles.badges}>
+            {CardsTools.map((item) => (
+              <ToolsCard
+                key={item.id}
+                title={item.title}
+                subtitle={item.subtitle}
+                svg={item.svg}
+              />
+            ))}
+          </div>
+          <Link to="/contact">
+            <button className={styles.button_projects}>Contate-me!</button>
+          </Link>
+        </div>
+      </Zoom>
     </div>
   );
 };

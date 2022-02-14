@@ -1,6 +1,6 @@
 import styles from "./HomePage.module.css";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import Typing from "react-typing-animation";
 import { Fade, Zoom } from "react-reveal";
@@ -65,10 +65,9 @@ const HomePage = () => {
               coisas e aprimorar as minhas habilidades!
             </p>
             <Link to="/about">
-
-            <button className={styles.button_card}>
-              Mais sobre mim <BsArrowRight />
-            </button>
+              <button className={styles.button_card}>
+                Mais sobre mim <BsArrowRight />
+              </button>
             </Link>
           </div>
         </div>
@@ -87,9 +86,11 @@ const HomePage = () => {
             ))}
           </div>
         </div>
-        <button className={styles.abilities_button}>
-          Ver mais skills <BsArrowRight />
-        </button>
+        <Link to="/about">
+          <button className={styles.abilities_button}>
+            Ver mais skills <BsArrowRight />
+          </button>
+        </Link>
       </Zoom>
       <div className={styles.projects}>
         <h1>Alguns dos meus projetos</h1>
