@@ -6,6 +6,8 @@ import styles from "./AboutPage.module.css";
 import davi from "../../assets/img/davi.png";
 import Typing from "react-typing-animation";
 import { Zoom } from "react-reveal";
+import { CardsAbout } from "../../assets/utils/Data";
+import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
 
 const AboutPage = () => {
   return (
@@ -45,7 +47,19 @@ const AboutPage = () => {
       </div>
       <div className={styles.abilities}>
         <h1>Minhas habilidades</h1>
-        <div></div>
+        <div className={styles.badges}>
+            {CardsAbout.map((item) => (
+              <AbilitiesCard
+                key={item.id}
+                title={item.title}
+                subtitle={item.subtitle}
+                svg={item.svg}
+              />
+            ))}
+          </div>
+      </div>
+      <div className={styles.learn}>
+
       </div>
     </div>
   );

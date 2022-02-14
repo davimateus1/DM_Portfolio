@@ -18,7 +18,7 @@
 .container .back a{ 
     color: #FFFFFF;
     text-decoration: none;
-    margin-left: 260px;
+    align-items: start;
     transition: all 0.4s
 }
 
@@ -30,8 +30,6 @@
     margin-top: 58px;
     display: flex;
     flex-direction: row;
-    width:1432px;
-    margin-left: 146px;
     justify-content:center;
 }
 
@@ -92,6 +90,9 @@
    margin-top: 128px;
    display: flex;
    justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   max-width: 100%;
 }
 
 .abilities h1{
@@ -100,5 +101,41 @@
     font-weight: 500;
     font-size: 34px;
     letter-spacing: 0.25px;
-    line-height:  40px;
+    line-height: 40px;
+    margin-bottom: 125px;
 }
+
+.badges {
+    flex-direction: row;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1700px;
+}
+
+.badges svg {
+    font-size: 40px;
+    color: #1aabcd;
+}
+
+.badges h2 {
+   color: #ffffff;
+   font-family: DM Sans, Arial, Helvetica, sans-serif;
+   font-weight: 500;
+   font-size: 34px;
+   line-height: 40px;
+   letter-spacing: 0.25px;
+}
+
+.badges p {
+    margin-top: 15px;
+    color: #ffffff;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+    text-align: start;
+    width: 340px;
+ }

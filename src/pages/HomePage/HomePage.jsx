@@ -7,7 +7,6 @@ import { Fade, Zoom } from "react-reveal";
 import Tilt from "react-tilt";
 
 import { BsArrowRight } from "react-icons/bs";
-import { DiReact, DiHtml5, DiCss3 } from "react-icons/di";
 
 import PopupDownload from "../../components/PopupDownload/PopupDownload";
 import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
@@ -17,30 +16,7 @@ import bemvindo from "../../assets/img/bemvindo.png";
 import marvelflix from "../../assets/img/marvelflix.png";
 import piececord from "../../assets/img/piececord.png";
 import pokenext from "../../assets/img/pokenext.png";
-
-const cards = [
-  {
-    id: 1,
-    title: "HTML",
-    subtitle:
-      "Essa tecnologia foi uma das primeiras que comecei a estudar, a linguagem de marcação HTML5, participei de vários cursos sobre. E com ela construi vários sites juntamente com CSS e JavaScript.",
-    svg: DiHtml5,
-  },
-  {
-    id: 2,
-    title: "CSS",
-    subtitle:
-      "Aprendendo o HTML seria mais do que minha obrigação aprender o CSS, levando isso em consideração, estudei em conjunto, para entender melhor a comunicação entre ele e o HTML.",
-    svg: DiCss3,
-  },
-  {
-    id: 3,
-    title: "ReactJS",
-    subtitle:
-      "Logo após entender entender HTML, CSS e JavaScript, decidi tomar a iniciativa de aprender uma biblioteca, e o que melhor combina essas três tecnologias é o ReactJS, inclusive (spoiler) este portfólio está sendo desenvolvido com o mesmo.",
-    svg: DiReact,
-  },
-];
+import { CardsHome } from "../../assets/utils/Data";
 
 const HomePage = () => {
   return (
@@ -101,7 +77,7 @@ const HomePage = () => {
         <div className={styles.abilities}>
           <h1>Minhas habilidades</h1>
           <div className={styles.badges}>
-            {cards.map((item) => (
+            {CardsHome.map((item) => (
               <AbilitiesCard
                 key={item.id}
                 title={item.title}
