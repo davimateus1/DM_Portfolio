@@ -1,0 +1,99 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+    background-color: #0E1011;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+}
+
+.container h1 {
+    margin-top: 50px;
+    color: #1aabcd;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+}
+.container p {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+}
+
+.container .contact_card{
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    margin-top: 45px;
+    background-color: #1F1F21;
+    border: 1.5px solid #3D3D3D;
+    width: 447px;
+    height: 546px;
+    padding: 24px;
+    border-radius: 8px;
+    margin: 44px 0px;
+    margin-bottom: 130px;
+}
+
+.container .contact_card label{
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+    color: #FFFFFF;
+    margin: 24px 0 8px 2px;
+}
+
+.container .contact_card input{
+    align-items: center;
+    padding: 16px 20px;
+    background-color: transparent;
+    border: 1px solid #A0A0A1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.container .contact_card input:focus{
+    outline: 0;
+}
+
+.container .contact_card textarea{
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: transparent;
+    border: 1px solid #A0A0A1;
+    box-sizing: border-box;
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    resize: none;
+}
+
+.container .contact_card button{
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-size: 16px;
+    line-height: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 8px;
+    background: #1aabcd;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.container .contact_card button:hover{
+   background-color: #5bc5ed;
+}

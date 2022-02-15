@@ -5,6 +5,7 @@
     justify-content: center;
     padding: 4em;
     background-color: #0E1011;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
 }
 
 .container .back{ 
@@ -53,7 +54,6 @@
     margin-top: 0;
     display: flex;
     flex-direction: row;
-    font-family: DM Sans, Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 60px;
     line-height: 71px;
@@ -97,7 +97,6 @@
 
 .abilities h1{
     color: #1aabcd;
-    font-family: DM Sans, Arial, Helvetica, sans-serif;
     font-weight: 500;
     font-size: 34px;
     letter-spacing: 0.25px;
@@ -121,7 +120,6 @@
 
 .badges h2 {
    color: #ffffff;
-   font-family: DM Sans, Arial, Helvetica, sans-serif;
    font-weight: 500;
    font-size: 34px;
    line-height: 40px;
@@ -131,7 +129,6 @@
 .badges p {
     margin-top: 15px;
     color: #ffffff;
-    font-family: DM Sans, Arial, Helvetica, sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 28px;
@@ -150,7 +147,6 @@
 
  .learn h1{
     color: #1aabcd;
-    font-family: DM Sans, Arial, Helvetica, sans-serif;
     font-weight: 500;
     text-align: center;
     font-size: 34px;
