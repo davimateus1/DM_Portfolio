@@ -9,8 +9,14 @@ import { Fade, Zoom } from "react-reveal";
 import { CardsAbout, CardsStudy, CardsTools } from "../../assets/utils/Data";
 import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
 import ToolsCard from "../../components/ToolsCard/ToolsCard";
+import { useEffect } from "react";
 
 const AboutPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
   return (
     <div className={styles.container}>
       <Fade top>

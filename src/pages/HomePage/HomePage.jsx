@@ -1,5 +1,6 @@
 import styles from "./HomePage.module.css";
 
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import Typing from "react-typing-animation";
@@ -19,6 +20,12 @@ import pokenext from "../../assets/img/pokenext.png";
 import { CardsHome } from "../../assets/utils/Data";
 
 const HomePage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
   return (
     <div className={styles.container}>
       <Fade top duration={750}>

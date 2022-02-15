@@ -1,7 +1,14 @@
+import { useEffect } from "react";
 import { Fade } from "react-reveal";
 import styles from "./ContactPage.module.css";
 
 const ContactPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
+
+
   return (
     <div className={styles.container}>
       <Fade bottom>
