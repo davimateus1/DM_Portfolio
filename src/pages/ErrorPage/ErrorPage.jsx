@@ -2,20 +2,21 @@ import { useEffect } from "react";
 import { Zoom } from "react-reveal";
 import { Link } from "react-router-dom";
 import Typing from "react-typing-animation";
-import styles from "./ThankYouPage.module.css";
+import styles from "./ErrorPage.module.css";
 
 const ThankYouPage = () => {
   useEffect(() => {
-    document.title = "Obrigado! :D";
+    document.title = "Erro 404 :(";
     window.scrollTo(0, 0);
   }, []);
 
   return (
     <div className={styles.container}>
       <Zoom>
-        <Typing speed={50}>
+        <Typing speed={150}>
           <div className={styles.text}>
-            <h1>Obrigado pelo contato! &#128512;</h1>
+            <h1>ERRO 404 :(</h1>
+            <p>Página não encontrada</p>
           </div>
         </Typing>
         <Typing>

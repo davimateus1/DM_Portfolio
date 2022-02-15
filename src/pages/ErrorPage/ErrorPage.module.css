@@ -1,0 +1,48 @@
+.container {
+    height: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+    background-color: #0E1011;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+}
+
+.container .text h1{
+    text-align: center;
+    width: 400px;
+    color: #1aabcd;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 71px;
+    letter-spacing: -0.5px;
+}
+
+.container .text p{
+    margin-top: -30px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 71px;
+    letter-spacing: -0.5px;
+}
+
+.container button{
+    padding: 16px 20px;
+    border: none;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #1aabcd;
+    transition: all 0.5s;
+}
+.container button:hover{
+    background-color: #5bc5ed;
+}

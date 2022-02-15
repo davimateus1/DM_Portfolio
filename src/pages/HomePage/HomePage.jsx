@@ -18,6 +18,7 @@ import marvelflix from "../../assets/img/marvelflix.png";
 import piececord from "../../assets/img/piececord.png";
 import pokenext from "../../assets/img/pokenext.png";
 import { CardsHome } from "../../assets/utils/Data";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 const HomePage = () => {
   useEffect(() => {
@@ -49,7 +50,9 @@ const HomePage = () => {
       </Typing>
       <Zoom>
         <div className={styles.buttons}>
-          <button className={styles.button1}>Ver projetos</button>
+          <Link to="/projects">
+            <button className={styles.button1}>Ver projetos</button>
+          </Link>
           <PopupDownload />
         </div>
       </Zoom>
@@ -146,9 +149,11 @@ const HomePage = () => {
         </div>
       </div>
       <Zoom>
-        <button className={styles.projects_button}>
-          Ver mais projetos <BsArrowRight />
-        </button>
+        <Link to="/projects">
+          <button className={styles.projects_button}>
+            Ver mais projetos <BsArrowRight />
+          </button>
+        </Link>
       </Zoom>
     </div>
   );

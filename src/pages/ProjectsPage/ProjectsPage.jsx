@@ -36,7 +36,6 @@ const ProjectsPage = () => {
           <CgDanger /> Para ver no Github, clique no titulo de cada card
         </p>
       </Zoom>
-
       <Fade bottom>
         <div className={styles.badges}>
           {repos.map((item) => (

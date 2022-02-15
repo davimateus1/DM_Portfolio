@@ -57,3 +57,56 @@
 .navbar button:hover{
     background-color: #5bc5ed;
 }
+
+@media (max-width: 480px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #0E1011;
+        border-bottom: 2px solid #131414;
+    }
+
+    .logo h1{
+        display: flex;
+        color: #1aabcd;
+        font-size: 40px;
+        font-weight: 600;
+        cursor: default;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        text-align:center;
+    }
+    .link_items li{
+        margin-bottom: 15px;
+        font-weight: 500;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .link_items{
+       flex-direction:column;
+       align-items: center;
+       justify-content: center;
+       text-align:center;
+    }
+    
+    .navbar button{
+        margin: 0;
+        margin-bottom: 30px;
+        padding: 10px 15px;
+        border: none;
+        font-family: Poppins, Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        background-color: #1aabcd;
+        transition: all 0.5s;
+    }
+}
