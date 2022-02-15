@@ -20,11 +20,10 @@ import pokenext from "../../assets/img/pokenext.png";
 import { CardsHome } from "../../assets/utils/Data";
 
 const HomePage = () => {
-
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
+    document.title = "Davi: Inicio";
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={styles.container}>

@@ -12,10 +12,10 @@ import ToolsCard from "../../components/ToolsCard/ToolsCard";
 import { useEffect } from "react";
 
 const AboutPage = () => {
-
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    document.title = "Davi: Sobre";
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={styles.container}>

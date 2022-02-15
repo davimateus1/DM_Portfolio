@@ -3,10 +3,7 @@ import Tilt from "react-tilt";
 
 const AbilitiesCard = (props) => {
   return (
-    <Tilt
-      className="Tilt"
-      options={{ max: 8, speed: 700, scale: 1.03 }}
-    >
+    <Tilt className="Tilt" options={{ max: 8, speed: 700, scale: 1.03 }}>
       <div className={styles.card}>
         <h2>
           <props.svg /> {props.title}

@@ -3,11 +3,10 @@ import { Fade } from "react-reveal";
 import styles from "./ContactPage.module.css";
 
 const ContactPage = () => {
-
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-
+    document.title = "Davi: Contato";
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className={styles.container}>
@@ -28,6 +27,7 @@ const ContactPage = () => {
           <input
             placeholder="E-mail"
             name="email"
+            type="email"
             required
             autocomplete="off"
           />

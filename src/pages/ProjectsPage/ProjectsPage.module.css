@@ -1,0 +1,86 @@
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 4em;
+    background-color: #0E1011;
+    font-family: DM Sans, Arial, Helvetica, sans-serif;
+}
+
+.container h1 {
+    margin-top: 80px;
+    color: #1aabcd;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 71px;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+    cursor: default;
+}
+
+.container .subtitle {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    margin-bottom: 80px;
+}
+
+.container svg {
+    color: #DAA520;
+    font-size: 20px;
+}
+
+.badges{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1700px;
+}
+
+.container p {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.5px;
+    cursor: default;
+}
+
+.container .obs {
+    text-align: center;
+    color: #DAA520;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+    cursor: default;
+}
+
+.container .github {
+    margin-top: 50px;
+    margin-bottom: 90px;
+    margin-right: 10px;
+    padding: 1.2em 2em;
+    border: none;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #1aabcd;
+    transition: all 0.5s;
+}
+
+.github:hover {
+    background-color: #5bc5ed;
+}
