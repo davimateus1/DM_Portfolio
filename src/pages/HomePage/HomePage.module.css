@@ -15,6 +15,7 @@
     height: 100%;
     margin-bottom: 114px;
 }
+
 .container h1{
     font-family: DM Sans, Arial, Helvetica, sans-serif;
     font-weight: 700;
@@ -342,6 +343,53 @@
         margin-left: 50px;
         margin-top: 9px;
         margin-bottom: 40px;
+    }
+
+    .abilities h1{
+        font-size: 34px;
+        line-height: 40px;
+    }
+
+    .badges svg {
+        font-size: 30px;
+    }
+    
+    .badges h2 {
+       font-size: 30px;
+    }
+
+    .badges p {
+        margin-top: 15px;
+        color: #ffffff;
+        font-family: DM Sans, Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        letter-spacing: 0.44px;
+        text-align: start;
+        width: 260px;
+     }
+
+     .projects h1{
+        margin-top: 148px;
+        margin-bottom: 60px;
+        color: #1aabcd;
+        font-family: DM Sans, Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+    }
+
+    .projects img{
+        width: 340px;
+        height: 220px;
+        border-radius: 20px;
+        display: flex;
+        margin-bottom: 59px;
+        border: 1.5px solid #1aabcd;
+        -webkit-box-shadow: 0px 0px 30px 30px rgba(26,171,205,0.3); 
+        box-shadow: 0px 0px 30px 30px rgba(26,171,205,0.09);
     }
     
 }
