@@ -178,3 +178,97 @@
 .learn .button_projects:hover {
   background-color: #5bc5ed;
 }
+
+@media (max-width: 480px) {
+
+    .container .back{ 
+        margin-left: -50px;
+    }
+
+    .card_home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image_container img{
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+    }
+
+    .card_home .texts{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+        color: #FFFFFF;
+    }
+    
+    .card_home h1{
+        text-align: center;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        font-weight: bold;
+        font-size: 45px;
+        line-height: 71px;
+        margin-bottom: 24px;
+        letter-spacing: -0.5px;
+        cursor: default;
+    }
+    
+    .card_home p{
+        width: 350px;
+        text-align: center;
+    }
+    
+    .card_home a{
+        margin-left: 75px;
+    }
+
+    .abilities h1{
+        text-align: center;
+        color: #1aabcd;
+        font-weight: 500;
+        font-size: 40px;
+        letter-spacing: 0.25px;
+        line-height: 40px;
+        margin-bottom: 125px;
+    }
+
+    .badges svg {
+        font-size: 30px;
+        color: #1aabcd;
+    }
+    
+    .badges h2 {
+       color: #ffffff;
+       font-weight: 500;
+       font-size: 30px;
+       line-height: 40px;
+       letter-spacing: 0.25px;
+    }
+    
+    .badges p {
+        text-align: center;
+        margin-top: 15px;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.44px;
+        text-align: start;
+        width: 270px;
+     }
+
+     .learn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 180px;
+     }
+
+}

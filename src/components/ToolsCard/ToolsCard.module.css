@@ -18,3 +18,10 @@
 .card p{
     text-align: center;
 }
+
+@media (max-width: 480px) {
+    .card{
+        width: 300px;
+        height: auto;
+    }
+}
