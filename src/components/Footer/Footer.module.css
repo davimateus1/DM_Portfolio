@@ -111,3 +111,60 @@
     margin-right: 150px;
     margin-left: 25px;
 }
+
+@media (max-width: 480px) {
+    .footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title{
+        margin: 0;
+        font-size: 25px;
+    }
+
+    .authorized p{
+        margin: 0;
+    }
+    .social_list{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px 35px 20px 0px;
+    }
+
+    .social_list li{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .social_list_two li{
+        text-align: center;
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .social_list_two {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px 35px 20px 0px;
+    }
+
+    .social_list_three li{
+        text-align: center;
+        margin:0;
+        padding-bottom: 10px;
+    }    
+
+    .social_list_three{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 20px 35px 20px 0px;
+    }
+}

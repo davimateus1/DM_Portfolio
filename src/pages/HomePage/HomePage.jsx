@@ -155,6 +155,7 @@ const HomePage = () => {
           </button>
         </Link>
       </Zoom>
+      <ScrollToTop />
     </div>
   );
 };
