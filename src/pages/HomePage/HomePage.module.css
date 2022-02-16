@@ -50,9 +50,11 @@
     margin-top: 70px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .container .button1{
+    margin-top: 20px;
     margin-right: 10px;
     padding: 1.2em 2em;
     border: none;
@@ -64,6 +66,23 @@
     border-radius: 8px;
     cursor: pointer;
     background-color: #1aabcd;
+    transition: all 0.5s;
+}
+
+.button2 {
+    margin-top: 20px;
+    margin-right: 10px;
+    padding: 1.2em 2em;
+    border: 1px solid #1aabcd;
+    color: #1aabcd;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: transparent;
     transition: all 0.5s;
 }
 
@@ -110,15 +129,6 @@
 }
 
 .card_home h1{
-   text-align: start;
-   margin-left: 32px;
-   font-family: DM Sans, Arial, Helvetica, sans-serif;
-   font-weight: 500;
-   font-size: 48px;
-   line-height: 57px;
-}
-
-.card_home h1{
     color: #1aabcd;
     text-align: start;
     margin-left: 32px;
@@ -138,7 +148,6 @@
     font-size: 16px;
     line-height: 28px;
     width: 470px;
-    
  }
 
  .card_home .button_card {
@@ -272,4 +281,67 @@
 
 .projects_button:hover {
     background-color: #5bc5ed;
+}
+
+@media (max-width: 480px) {
+
+    .container .bem_vindo img{
+        display: none;
+    }
+
+    .container h1{
+        font-size: 45px;
+    }
+  
+    .container p{
+        font-size: 14px;
+    }
+
+    .container .buttons {
+        margin-top: 190px;
+        flex-direction: column;
+    }
+
+    .container .button1{
+    margin-right: 0;
+    margin-bottom: 20px;
+    }
+
+    .card_home{     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 169px;
+        width: 350px;
+        height: auto;
+    }
+
+    .card_home .image_container img{
+        margin: 24px 26px 24px 24px;
+        width: 250.16px;
+        height: 250.16px;
+        border: 1px solid transparent;
+    }
+
+    .card_home h1{
+        text-align: center;
+        margin-left: 0px;
+        font-weight: 500;
+        font-size: 36px;
+     }
+
+     .card_home p{
+        margin-top: -20px;
+        text-align: center;
+        margin-left: 0px;
+        font-size: 16px;
+        width: 300px;
+     }
+
+     .card_home .button_card {
+        margin-left: 50px;
+        margin-top: 9px;
+        margin-bottom: 40px;
+    }
+    
 }

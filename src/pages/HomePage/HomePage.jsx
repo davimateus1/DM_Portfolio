@@ -9,7 +9,6 @@ import Tilt from "react-tilt";
 
 import { BsArrowRight } from "react-icons/bs";
 
-import PopupDownload from "../../components/PopupDownload/PopupDownload";
 import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
 
 import davi from "../../assets/img/davi.png";
@@ -50,10 +49,15 @@ const HomePage = () => {
       </Typing>
       <Zoom>
         <div className={styles.buttons}>
+          <Link to="/">
+            <button className={styles.button2}>Download CV (EN)</button>
+          </Link>
+          <Link to="/">
+            <button className={styles.button2}>Download CV (PT-BR)</button>
+          </Link>
           <Link to="/projects">
             <button className={styles.button1}>Ver projetos</button>
           </Link>
-          <PopupDownload />
         </div>
       </Zoom>
       <Fade bottom>
