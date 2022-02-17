@@ -52,3 +52,13 @@
     border-radius: 8px;
     text-transform: capitalize;
 }
+
+@media (max-width: 480px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 24px;
+        width: 280px;
+    }
+    
+}

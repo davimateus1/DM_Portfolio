@@ -22,7 +22,7 @@ const AboutPage = () => {
       <Fade top>
         <div className={styles.back}>
           <Link to="/">
-            <AiOutlineArrowLeft /> Voltar
+            <AiOutlineArrowLeft />
           </Link>
         </div>
       </Fade>

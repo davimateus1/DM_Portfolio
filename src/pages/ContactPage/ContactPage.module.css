@@ -62,7 +62,13 @@
 }
 
 .container .contact_card input:focus{
-    outline: 0;
+    outline: 1px solid #1aabcd;
+    transition: all 0.5s;
+}
+
+.container .contact_card textarea:focus{
+    outline: 1px solid #1aabcd;
+    transition: all 0.5s;
 }
 
 .container .contact_card textarea{
@@ -96,4 +102,39 @@
 
 .container .contact_card button:hover{
    background-color: #5bc5ed;
+}
+
+@media (max-width: 480px) {
+
+    .container h1 {
+        text-align: center;
+        margin-top: 10px;
+        color: #1aabcd;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 71px;
+        margin-bottom: 16px;
+    }
+    .container p {
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.5px;
+    }
+    .container .contact_card{
+        display: flex;
+        text-align: start;
+        flex-direction: column;
+        margin-top: 45px;
+        background-color: #1F1F21;
+        border: 1.5px solid #3D3D3D;
+        width: 280px;
+        height: 546px;
+        padding: 24px;
+        border-radius: 8px;
+        margin: 44px 0px;
+        margin-bottom: 10px;
+    }
 }

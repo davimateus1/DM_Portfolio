@@ -1,9 +1,8 @@
 import styles from "./HomePage.module.css";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import Typing from "react-typing-animation";
 import { Fade, Zoom } from "react-reveal";
 import Tilt from "react-tilt";
 
@@ -20,6 +19,8 @@ import { CardsHome } from "../../assets/utils/Data";
 import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 const HomePage = () => {
+  const [open, setOpen] = useState(false);
+
   useEffect(() => {
     document.title = "Davi: Inicio";
     window.scrollTo(0, 0);
@@ -32,13 +33,12 @@ const HomePage = () => {
           <img src={bemvindo} alt="bem-vindo" />
         </div>
       </Fade>
-      <Typing speed={30}>
+      <Zoom>
         <div className={styles.container_height}>
           <h1>
             Sou <span>Davi Mateus</span>
           </h1>
           <h1>Desenvolvedor Front-end</h1>
-          <Typing.Delay ms={30} />
           <p>
             Bem-vindo(a) ao meu portfólio, aqui você encontrará diversas
             informações sobre mim, tais como: CV, projetos, estilo de
@@ -46,18 +46,37 @@ const HomePage = () => {
           </p>
           <p>Espero que goste e sinta-se a vontade para explorar!</p>
         </div>
-      </Typing>
+      </Zoom>
       <Zoom>
         <div className={styles.buttons}>
-          <Link to="/">
-            <button className={styles.button2}>Download CV (EN)</button>
-          </Link>
-          <Link to="/">
-            <button className={styles.button2}>Download CV (PT-BR)</button>
-          </Link>
           <Link to="/projects">
             <button className={styles.button1}>Ver projetos</button>
           </Link>
+          <button className={styles.button2} onClick={() => setOpen(!open)}>
+            Download CV
+          </button>
+          {open ? (
+            <>
+              <Zoom>
+                <a
+                  href="https://drive.google.com/file/d/1lUJ8vPSgexuVgudpRLH-K4ZVRS_beeUW/view?usp=sharing"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className={styles.button2}>(PT-BR)</button>
+                </a>
+                <a
+                  href="/erro"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button className={styles.button2}>(EN)</button>
+                </a>
+              </Zoom>
+            </>
+          ) : (
+            ""
+          )}
         </div>
       </Zoom>
       <Fade bottom>

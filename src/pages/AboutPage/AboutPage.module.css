@@ -9,6 +9,7 @@
 }
 
 .container .back{ 
+    font-size: 30px;
     display: flex;
     text-decoration: none;
     align-items: start;
@@ -182,7 +183,7 @@
 @media (max-width: 480px) {
 
     .container .back{ 
-        margin-left: -50px;
+        margin-left: -20px;
     }
 
     .card_home {

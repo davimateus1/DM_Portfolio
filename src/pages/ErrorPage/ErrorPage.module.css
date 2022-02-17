@@ -12,7 +12,6 @@
 
 .container .text h1{
     text-align: center;
-    width: 400px;
     color: #1aabcd;
     font-weight: 700;
     font-size: 60px;
@@ -45,4 +44,30 @@
 }
 .container button:hover{
     background-color: #5bc5ed;
+}
+
+@media (max-width: 480px) {
+
+    .container {
+        height: 400px;
+    }
+
+    .container .text h1{
+        text-align: center;
+        color: #1aabcd;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 71px;
+        letter-spacing: -0.5px;
+    }
+    
+    .container .text p{
+        margin-top: -30px;
+        text-align: center;
+        color: #FFFFFF;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 71px;
+        letter-spacing: -0.5px;
+    }
 }

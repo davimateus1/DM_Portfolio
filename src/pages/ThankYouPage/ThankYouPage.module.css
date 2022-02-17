@@ -1,5 +1,4 @@
 .container {
-    height: 100%;
     height: 550px;
     display: flex;
     flex-direction: column;
@@ -33,6 +32,21 @@
     background-color: #1aabcd;
     transition: all 0.5s;
 }
+
 .container button:hover{
     background-color: #5bc5ed;
+}
+
+@media (max-width: 480px) {
+    
+    .container {
+        height: 400px;
+    }
+    
+    .container .text h1{
+        width: 200px;
+        font-size: 40px;
+        line-height: 45px;
+        letter-spacing: -0.5px;
+    }
 }

@@ -72,7 +72,6 @@
 
 .button2 {
     margin-top: 20px;
-    margin-right: 10px;
     padding: 1.2em 2em;
     border: 1px solid #1aabcd;
     color: #1aabcd;
@@ -302,7 +301,7 @@
         margin-top: 190px;
         flex-direction: column;
     }
-
+    
     .container .button1{
     margin-right: 0;
     margin-bottom: 20px;

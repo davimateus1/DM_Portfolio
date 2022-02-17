@@ -23,7 +23,7 @@ const ProjectsPage = () => {
       .catch((error) => {
         console.log(error);
       });
-  }, [setRepos]);
+  }, []);
 
   return (
     <div className={styles.container}>
