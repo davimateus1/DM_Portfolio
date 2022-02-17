@@ -76,7 +76,6 @@
     color: #fff;
     margin-left: 5px;
     font-size: 20px;
-    transition: all .4s;
 }
 
 .social_list_three li a:hover{
@@ -84,7 +83,6 @@
 }
 
 .click{
-    transition: all .4s;
     border-bottom: 2px solid transparent;
 }
 
@@ -92,7 +90,6 @@
     color: #FFFFFF;
     text-decoration: none;
     padding: 5px;
-    transition: all .4s;
     border-bottom: 2px solid transparent;
 }
 

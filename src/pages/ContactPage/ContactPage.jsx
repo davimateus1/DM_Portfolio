@@ -41,7 +41,7 @@ const ContactPage = () => {
           <input
             type="hidden"
             name="_next"
-            value="http://localhost:3000/thanks"
+            value="https://davimateusga.vercel.app/thanks"
           />
           <input type="hidden" name="_captcha" value="false" />
           <button type="submit">Enviar</button>

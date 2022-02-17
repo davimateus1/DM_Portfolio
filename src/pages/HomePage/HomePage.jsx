@@ -16,7 +16,6 @@ import marvelflix from "../../assets/img/marvelflix.png";
 import piececord from "../../assets/img/piececord.png";
 import pokenext from "../../assets/img/pokenext.png";
 import { CardsHome } from "../../assets/utils/Data";
-import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
 
 const HomePage = () => {
   const [open, setOpen] = useState(false);
@@ -178,7 +177,6 @@ const HomePage = () => {
           </button>
         </Link>
       </Zoom>
-      <ScrollToTop />
     </div>
   );
 };
