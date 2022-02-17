@@ -19,7 +19,7 @@ const AboutPage = () => {
 
   return (
     <div className={styles.container}>
-      <Fade top>
+      <Fade bottom>
         <div className={styles.back}>
           <Link to="/">
             <AiOutlineArrowLeft />
@@ -27,7 +27,7 @@ const AboutPage = () => {
         </div>
       </Fade>
       <div className={styles.card_home}>
-        <Fade top>
+        <Fade bottom>
           <div className={styles.image_container}>
             <img src={davi} alt="avatar" />
           </div>

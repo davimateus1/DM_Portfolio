@@ -27,7 +27,7 @@ const HomePage = () => {
 
   return (
     <div className={styles.container}>
-      <Fade top duration={750}>
+      <Fade bottom duration={750}>
         <div className={styles.bem_vindo}>
           <img src={bemvindo} alt="bem-vindo" />
         </div>
