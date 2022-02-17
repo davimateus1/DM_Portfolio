@@ -53,7 +53,7 @@
     text-transform: capitalize;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 825px) {
     .card{
         display: flex;
         flex-direction: column;

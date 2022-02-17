@@ -109,7 +109,7 @@
     margin-left: 25px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 825px) {
     .footer{
         flex-direction: column;
         justify-content: center;

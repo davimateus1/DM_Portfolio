@@ -85,7 +85,7 @@
     background-color: #5bc5ed;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 825px) {
     .container h1 {
         text-align: center;
         font-size: 35px;
