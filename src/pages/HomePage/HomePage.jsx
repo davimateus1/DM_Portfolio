@@ -58,18 +58,18 @@ const HomePage = () => {
             <>
               <Zoom>
                 <a
-                  href="https://drive.google.com/file/d/1lUJ8vPSgexuVgudpRLH-K4ZVRS_beeUW/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1h1fZ_iqO27OBQqmvxzde0lKfXjv_bp14/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <button className={styles.button2}>(PT-BR)</button>
+                  <button className={styles.button2}>PT-BR</button>
                 </a>
                 <a
-                  href="/erro"
+                  href="https://drive.google.com/file/d/1f4XxDDStFCTTJIW2FOgSQKw_THkT1sOr/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <button className={styles.button2}>(EN)</button>
+                  <button className={styles.button2}>EN</button>
                 </a>
               </Zoom>
             </>
