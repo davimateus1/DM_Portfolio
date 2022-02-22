@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+<h1 align="center">
+  Website Portfólio - Davi Mateus
+</h1>
+<h3 align="center">
+   <img alt="move.it" title="move.it" src="https://user-images.githubusercontent.com/66326378/155051357-5becc7a9-f114-4e5e-b6b3-1d4769f31fd3.png" height=200px weight=200px />
+</h3>
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-como-executar">Como executar</a>
+</p>
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+## ✨ Tecnologias
 
-### `npm start`
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [ReactJS](https://reactjs.org)
+- [React Icons](https://react-icons.github.io/react-icons/search)
+- [React Router](https://reactrouter.com)
+- [React Reveal](https://www.react-reveal.com)
+- [React Typing](https://github.com/notadamking/react-typing-animation)
+- [React Tilt](https://www.npmjs.com/package/react-tilt)
+- [FormSubmit](https://formsubmit.co)
+- [Axios](https://axios-http.com/docs/intro)
+- [Github API](https://api.github.com/users)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 💻 Projeto
 
-### `npm test`
+Este projeto foi criado no intuito de ser meu Website de Portfólio e ao mesmo tempo treinar minha lógica de programação, inspirado em um layout do Yusting Mora (UI/UX Designer) que foi realizado no Figma. O projeto tem algumas seções, tais como:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<ul>
+  <li>Inicio (Página Inicial);</li>
+  <li>Sobre mim (Página que faz um resumo sobre minhas principais características e pontos fortes);</li>
+  <li>Projetos (Página em que estão todos os meus projetos, puxando dados da API do Github através do Axios);</li>
+  <li>Contato (Página de contato que tem um formulário de contato que é submetido com o FormSubmit).</li>
+</ul>
 
-### `npm run build`
+Além disso, para deixar o site ainda mais elegante, existem duas páginas a mais:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<ul>
+  <li>Página de erro 404 (Quando não existe a rota que o usuário deseja acessar);</li>
+  <li>Página de Agradecimento (Mostrada após o envio do formulário).</li>
+</ul>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Este projeto me fez treinar e aprimorar significativamente as minhas habilidades no React. Além disso, temos ainda os seguintes pontos:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<ul>
+  <li>✅ Responsividade: este projeto está adaptado para qualquer resolução seja ela Desktop, Notebook, Tablets ou Smartphones.</li>
+  <li>✅ UI/UX: consite em uma UI/UX sofisticada e agradável ao usuário. </li>
+  <li>✅ Deploy na web via Vercel App </li>
+  <li>✅ Organização da estrutura do projeto em pastas</li>
+</ul>
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🔖 Layout
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/vzbJY1fzHzcuYNI8A7sAmD/Portafolio-Personal---Free-Template-(Community)?node-id=0%3A1).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🚀 Deploy
 
-## Learn More
+Você pode testar o meu site atráves [desse link](https://davimateusga.vercel.app).
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🚀 Como executar
 
-### Code Splitting
+- Clone o repositório
+- Instale o [Node.js](https://nodejs.org/en/download/)
+- Abra o repositório em algum editor de texto (VSCode de preferência)
+- Abra o terminal do Editor de texto e execute o comando `npm install` para realizar a instação de todas as dependências
+- Inicie o servidor com `npm start` no terminal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Agora você pode acessar [`localhost:3000`](http://localhost:3000) no seu navegador.
 
-### Analyzing the Bundle Size
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+---
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h3 align="center">
+  Projeto realizado por Davi Mateus, desenvolvedor front-end.
+</h3>
