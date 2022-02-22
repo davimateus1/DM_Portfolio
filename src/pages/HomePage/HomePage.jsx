@@ -4,18 +4,15 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { Fade, Zoom } from "react-reveal";
-import Tilt from "react-tilt";
 
 import { BsArrowRight } from "react-icons/bs";
 
 import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
+import ProjectImages from "../../components/ProjectImages/ProjectImages";
+import { CardsHome } from "../../assets/utils/Data";
 
 import davi from "../../assets/img/davi.png";
 import bemvindo from "../../assets/img/bemvindo.png";
-import marvelflix from "../../assets/img/marvelflix.png";
-import piececord from "../../assets/img/piececord.png";
-import pokenext from "../../assets/img/pokenext.png";
-import { CardsHome } from "../../assets/utils/Data";
 
 const HomePage = () => {
   const [open, setOpen] = useState(false);
@@ -126,48 +123,7 @@ const HomePage = () => {
       <div className={styles.projects}>
         <h1>Alguns dos meus projetos</h1>
         <div className={styles.projects_image}>
-          <a
-            href="https://github.com/davimateus1/Pokenext"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Tilt
-              className="Tilt"
-              options={{ max: 8, speed: 700, scale: 1.03 }}
-            >
-              <Zoom>
-                <img alt="pokenext" src={pokenext} />
-              </Zoom>
-            </Tilt>
-          </a>
-          <a
-            href="https://github.com/davimateus1/Piececord"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Tilt
-              className="Tilt"
-              options={{ max: 8, speed: 700, scale: 1.03 }}
-            >
-              <Zoom>
-                <img alt="piececord" src={piececord} />
-              </Zoom>
-            </Tilt>
-          </a>
-          <a
-            href="https://github.com/davimateus1/Marvelflix"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Tilt
-              className="Tilt"
-              options={{ max: 8, speed: 700, scale: 1.03 }}
-            >
-              <Zoom>
-                <img alt="marvelflix" src={marvelflix} />
-              </Zoom>
-            </Tilt>
-          </a>
+         <ProjectImages />
         </div>
       </div>
       <Zoom>

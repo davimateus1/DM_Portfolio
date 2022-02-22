@@ -21,17 +21,17 @@ const ContactPage = () => {
           method="POST"
           action="https://formsubmit.co/davimateusga@gmail.com"
         >
-          <label for="nome">Seu Nome</label>
-          <input placeholder="Nome" name="name" required autocomplete="off" />
-          <label for="email">Seu E-mail</label>
+          <label htmlFor="nome">Seu Nome</label>
+          <input placeholder="Nome" name="name" required autoComplete="off" />
+          <label htmlFor="email">Seu E-mail</label>
           <input
             placeholder="E-mail"
             name="email"
             type="email"
             required
-            autocomplete="off"
+            autoComplete="off"
           />
-          <label for="mensagem">Sua mensagem</label>
+          <label htmlFor="mensagem">Sua mensagem</label>
           <textarea
             placeholder="Mensagem..."
             rows={6}

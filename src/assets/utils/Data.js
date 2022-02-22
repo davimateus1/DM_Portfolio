@@ -15,6 +15,10 @@ import {
   SiVisualstudiocode,
 } from "react-icons/si";
 
+import marvelflix from "../../assets/img/marvelflix.png";
+import piececord from "../../assets/img/piececord.png";
+import pokenext from "../../assets/img/pokenext.png";
+
 export const CardsHome = [
   {
     id: 1,
@@ -129,5 +133,26 @@ export const CardsTools = [
     subtitle:
       "Trello é um aplicativo de gerenciamento de projeto baseado na web criado pela Fog Creek Software.",
     svg: SiTrello,
+  },
+];
+
+export const Images = [
+  {
+    id: 1,
+    href: "https://github.com/davimateus1/Pokenext",
+    image: pokenext,
+    alt: "pokenext",
+  },
+  {
+    id: 2,
+    href: "https://github.com/davimateus1/Piececord",
+    image: piececord,
+    alt: "piececord",
+  },
+  {
+    id: 3,
+    href: "https://github.com/davimateus1/Marvelflix",
+    image: marvelflix,
+    alt: "marvelflix",
   },
 ];
