@@ -38,7 +38,7 @@ export const CardsHome = [
     id: 3,
     title: "ReactJS",
     subtitle:
-      "Logo após entender entender HTML, CSS e JavaScript decidi tomar a iniciativa de aprender uma biblioteca, e o que melhor combina essas três tecnologias é o ReactJS, inclusive (spoiler) este portfólio está sendo desenvolvido com o mesmo.",
+      "Logo após entender HTML, CSS e JavaScript decidi tomar a iniciativa de aprender uma biblioteca, e o que melhor combina essas três tecnologias é o ReactJS, inclusive (spoiler) este portfólio está sendo desenvolvido com o mesmo.",
     svg: DiReact,
   },
 ];
@@ -83,7 +83,7 @@ export const CardsAbout = [
     id: 6,
     title: "Java",
     subtitle:
-      "O Java foi a linguagem que eu tive meu primeiro contato e desenvolvi a lógica de programação essencial, trabalhei com ela em todos os periodos da faculdade (até o momento), assim adquiri um certo conhecimento e dominio na linguagem.",
+      "O Java foi a linguagem que eu tive meu primeiro contato e desenvolvi a lógica de programação essencial, trabalhei com ela em todos os periodos da faculdade (até o momento), assim adquiri um certo conhecimento e domínio na linguagem.",
     svg: DiJava,
   },
 ];
