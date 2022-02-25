@@ -51,10 +51,10 @@ Além disso, para deixar o site ainda mais elegante, existem duas páginas a mai
 Este projeto me fez treinar e aprimorar significativamente as minhas habilidades no React. Além disso, temos ainda os seguintes pontos:
 
 <ul>
-  <li>✅ Responsividade: este projeto está adaptado para qualquer resolução seja ela Desktop, Notebook, Tablets ou Smartphones.</li>
-  <li>✅ UI/UX: consite em uma UI/UX sofisticada e agradável ao usuário. </li>
-  <li>✅ Deploy na web via Vercel App </li>
-  <li>✅ Organização da estrutura do projeto em pastas</li>
+  <li>✅ Responsividade: este projeto está adaptado para qualquer resolução seja ela Desktop, Notebook, Tablets ou Smartphones;</li>
+  <li>✅ UI/UX: consite em uma UI/UX sofisticada e agradável ao usuário; </li>
+  <li>✅ Deploy na web via Vercel App; </li>
+  <li>✅ Organização da estrutura do projeto em pastas.</li>
 </ul>
 
 <br>
