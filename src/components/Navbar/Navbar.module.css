@@ -6,6 +6,7 @@
     background-color: #0E1011;
     border-bottom: 2px solid #131414;
 }
+
 .logo h1 {
     color: #FFFFFF;
     margin-left: 150px;
@@ -14,12 +15,12 @@
     cursor: default;
 }
 
-.link_items{
+.link_items {
     display: flex;
     list-style: none;
 }
 
-.link_items li{
+.link_items li {
     margin-right: 37px;
     font-weight: 500;
     font-size: 14px;
@@ -39,7 +40,7 @@
     border-color: #66D2D1;
 }
 
-.navbar button{
+.navbar button {
     padding: 16px 20px;
     margin-right: 150px;
     border: none;
@@ -53,7 +54,8 @@
     background-color: #1aabcd;
     transition: all 0.5s;
 }
-.navbar button:hover{
+
+.navbar button:hover {
     background-color: #5bc5ed;
 }
 
@@ -68,7 +70,7 @@
         border-bottom: 2px solid #131414;
     }
 
-    .logo h1{
+    .logo h1 {
         display: flex;
         color: #1aabcd;
         font-size: 40px;
@@ -77,23 +79,24 @@
         margin: 0;
         align-items: center;
         justify-content: center;
-        text-align:center;
+        text-align: center;
     }
-    .link_items li{
+
+    .link_items li {
         margin-bottom: 15px;
         font-weight: 500;
         font-size: 14px;
         cursor: pointer;
     }
 
-    .link_items{
-       flex-direction:column;
-       align-items: center;
-       justify-content: center;
-       text-align:center;
+    .link_items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
-    
-    .navbar button{
+
+    .navbar button {
         margin: 0;
         margin-bottom: 30px;
         padding: 10px 15px;
