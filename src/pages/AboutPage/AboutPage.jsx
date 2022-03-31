@@ -10,6 +10,7 @@ import { CardsAbout, CardsStudy, CardsTools } from "../../assets/utils/Data";
 import AbilitiesCard from "../../components/AbilitiesCard/AabilitiesCard";
 import ToolsCard from "../../components/ToolsCard/ToolsCard";
 import { useEffect } from "react";
+import TimeLine from "../../components/TimeLine/TimeLine";
 
 const AboutPage = () => {
   useEffect(() => {
@@ -54,6 +55,12 @@ const AboutPage = () => {
           </div>
         </Fade>
       </div>
+      <Zoom>
+        <div className={styles.carrer}>
+          <h1>Minha trajetória</h1>
+          <TimeLine />
+        </div>
+      </Zoom>
       <Zoom>
         <div className={styles.abilities}>
           <h1>Minhas habilidades</h1>

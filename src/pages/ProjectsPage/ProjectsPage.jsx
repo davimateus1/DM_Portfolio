@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import RepositoriesCard from "../../components/RepositoriesCard/RepositoriesCard";
+import { Oval } from "react-loading-icons";
 import styles from "./ProjectsPage.module.css";
 
 import { CgDanger } from "react-icons/cg";
@@ -8,6 +9,7 @@ import { Fade, Zoom } from "react-reveal";
 
 const ProjectsPage = () => {
   const [repos, setRepos] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     document.title = "Davi: Projetos";
@@ -18,7 +20,10 @@ const ProjectsPage = () => {
     axios
       .get("https://api.github.com/users/davimateus1/repos")
       .then((response) => {
-        setRepos(response.data);
+        setTimeout(() => {
+          setRepos(response.data);
+          setLoading(false);
+        }, 1500);
       })
       .catch((error) => {
         console.log(error);
@@ -37,18 +42,24 @@ const ProjectsPage = () => {
         </p>
       </Zoom>
       <Fade bottom>
-        <div className={styles.badges}>
-          {repos.map((item) => (
-            <RepositoriesCard
-              key={item.id}
-              name={item.name}
-              description={item.description}
-              star={item.stargazers_count}
-              url={item.html_url}
-              visibility={item.visibility}
-            />
-          ))}
-        </div>
+        {loading ? (
+          <div>
+            <Oval width="300px" stroke="#1aabcd" />
+          </div>
+        ) : (
+          <div className={styles.badges}>
+            {repos.map((item) => (
+              <RepositoriesCard
+                key={item.id}
+                name={item.name}
+                description={item.description}
+                star={item.stargazers_count}
+                url={item.html_url}
+                visibility={item.visibility}
+              />
+            ))}
+          </div>
+        )}
       </Fade>
       <Zoom>
         <a
