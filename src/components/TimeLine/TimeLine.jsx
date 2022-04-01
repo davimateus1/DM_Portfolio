@@ -58,14 +58,14 @@ const TimeLine = () => {
         iconStyle={{ background: "#2B0723", color: "#fff" }}
       >
         <h3 className="vertical-timeline-element-title">
-          Engenheiro de Frontend 
+          Engenheiro de Front-end
         </h3>
         <h4 className="vertical-timeline-element-subtitle">
           Junior, Loomi, Recife - PE
         </h4>
         <p>
-          Atuo no denenvolvimento do front-end de aplicações web utilizando
-          ReactJS e diversas ferramentas, bibliotecas e tecnologias atuais.
+          Atuo no denenvolvimento front-end de aplicações web utilizando ReactJS
+          e diversas ferramentas, bibliotecas e tecnologias atuais.
         </p>
       </VerticalTimelineElement>
     </VerticalTimeline>
