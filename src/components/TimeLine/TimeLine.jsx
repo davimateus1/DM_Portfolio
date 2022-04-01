@@ -61,7 +61,7 @@ const TimeLine = () => {
           Engenheiro de Front-end
         </h3>
         <h4 className="vertical-timeline-element-subtitle">
-          Junior, Loomi, Recife - PE
+          Junior, Loomi - Recife - PE
         </h4>
         <p>
           Atuo no denenvolvimento front-end de aplicações web utilizando ReactJS
